@@ -1,0 +1,28 @@
+{
+  "name": "ap-ca-test-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "2.8.4",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss-preset-env": "^8.0.1",
+    "swiper": "^9.0.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,html,css,json}": "prettier --write"
+  }
+}
